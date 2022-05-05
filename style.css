@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Mono:wght@300;500;700 & display=swap');
+
+
+:root {
+    --primary: #82b576;
+    --secondary: #cd3939;
+    --light: #ffffff;
+    --dark: #333333;
+    --diabled: #e7e7e7;
+}
+
+body{
+    font-family: "roboto mono", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: var(--diabled);
+}
+
+*:first-letter{
+    text-transform: capitalize;
+    
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 50px auto;
+    padding: 45px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 2.9em;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateText,
+#dateMonth,
+#dateNumber {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--diabled);
+}
+
+.orderButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;  
+    background-color: var(--secondary);
+    color: var(--light); 
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
